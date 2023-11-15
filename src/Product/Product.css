@@ -1,0 +1,26 @@
+.product{
+    display: flex;
+    height: 70vh;
+    justify-content: space-between;
+}
+.product-image{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content{
+    width: 50%;
+    padding: 5vh;
+}
+.description{
+    font-size: larger;
+    line-height:2 ;
+}
+.heading h1{
+    width: fit-content;
+}
