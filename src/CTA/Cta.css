@@ -45,7 +45,7 @@
    
    .cta:hover:before {
     width: 100%;
-    background: var(--background);
+    background: #F5C485;
    }
    
    .cta:hover svg {

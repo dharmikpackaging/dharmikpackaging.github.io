@@ -23,4 +23,5 @@
 }
 .heading h1{
     width: fit-content;
+    transition: 1s;
 }

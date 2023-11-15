@@ -6,18 +6,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
+h1,h2,h3,h4,h5,h6,p{
+  color: var(--font-color) !important;
+}
+:root{
+  --bs-blue: #8a5f49 !important;
+  --bs-indigo: #8a5f49 !important;
+  --bs-primary: #8a5f49 !important;
+  --bs-link-hover-color:#8a5f49 !important;
+  --bs-link-color:#8a5f49 !important;
 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 :root{
-  --background:#e2e0e0 ;
+  --background:#fef9f2 ;
   --navBackground:#d6d6d6 ;
-  --navButton:#333333 ;
+  --navButton:#525252 ;
+  --font-color:#525252;
 }
- 
+
 /*#region cursor*/
 
 .mf-cursor {

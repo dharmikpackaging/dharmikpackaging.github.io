@@ -9,6 +9,9 @@ import Carousel from './Carousel/Carousel';
 import Product from './Product/Product';
 import Uses from './Uses/Uses';
 import LandingPage from './Landing-Page/LandingPage';
+import Contact from './Contact/Contact';
+import About from './About us/About';
+import Cta from './CTA/Cta';
 
 const initializeCursor = () => {
   MouseFollower.registerGSAP(gsap);
@@ -26,14 +29,14 @@ function App() {
     console.log("App loaded");
    const cursor =initializeCursor();
 
-   const bootstrap = require('bootstrap');
+  //  const bootstrap = require('bootstrap');
 
-   // Activate the carousel
-   const carouselElement = document.querySelector('#carousel');
-   new bootstrap.Carousel(carouselElement, {
-     interval:3000,
-     ride:'carousel'
-   });
+  //  // Activate the carousel
+  //  const carouselElement = document.querySelector('#carousel');
+  //  new bootstrap.Carousel(carouselElement, {
+  //    interval:3000,
+  //    ride:'carousel'
+  //  });
   
     return () => {cursor.destroy();};
   });
@@ -41,16 +44,25 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      {/* <LandingPage/> */}
-      <Carousel/>
+      <LandingPage/>
+      {/* <Carousel/> */}
       <div id="products" className='products'>
         <h1 className='product-heading'  data-cursor="-opaque" data-magnetic >Products</h1>
         <Product number = {1} heading = "Corrogated Boxes" description = {boxes_description} rotate = {false} />
         <Product number = {2} heading = "Corrogated Sheets" description = {sheet_description} rotate = {true} />
         <Product number = {3} heading = "Corrogated Rolls" description = {roll_description} rotate = {false} />
+        <div className='view-cta'>
+          <Cta className='View' name='View more'/>
+        </div>
       </div>
       <div>
-        <Uses/>
+       <About/>
+      </div>
+      {/* <div>
+       <Uses/>
+      </div> */}
+      <div>
+        <Contact/>
       </div>
     </div>
   );

@@ -20,8 +20,8 @@ function Navbar() {
         <div className='buttons'>
           <NavButtons name ={"home"} onClick={scrollFn} />
           <NavButtons name ={"products"} onClick={scrollFn} />
-          <NavButtons name ={"contact"} onClick={scrollFn} />
           <NavButtons name ={"about us"} onClick={scrollFn} />
+          <NavButtons name ={"contact"} onClick={scrollFn} />
         </div>
       </nav>
   );
