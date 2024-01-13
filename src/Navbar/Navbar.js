@@ -15,7 +15,7 @@ function Navbar() {
   return (
       <nav className=''>
         <div className='brand'>
-          <h1 data-cursor="-opaque" data-cursor-stick=".brand" data-magnetic >Dharmik Packaging</h1>
+          <h1>Dharmik Packaging</h1>
         </div>
         <div className='buttons'>
           <NavButtons name ={"home"} onClick={scrollFn} />

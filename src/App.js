@@ -1,24 +1,19 @@
 import './App.css';
-import MouseFollower from "mouse-follower";
-import gsap from "gsap";
-import Magnetic from "./Magnetic";
-import $ from 'jquery';
+// import MouseFollower from "mouse-follower";
 import { useEffect,useRef } from "react";
 import Navbar from "./Navbar/Navbar"
-import Carousel from './Carousel/Carousel';
 import Product from './Product/Product';
-import Uses from './Uses/Uses';
 import LandingPage from './Landing-Page/LandingPage';
 import Contact from './Contact/Contact';
 import About from './About us/About';
 import Cta from './CTA/Cta';
 
-const initializeCursor = () => {
-  MouseFollower.registerGSAP(gsap);
-  const cursor = new MouseFollower({ skewing: 2 });
-  $('[data-magnetic]').each(function () { new Magnetic(this); });
-  return cursor;
-};
+// const initializeCursor = () => {
+//   MouseFollower.registerGSAP(gsap);
+//   const cursor = new MouseFollower({ skewing: 2 });
+//   $('[data-magnetic]').each(function () { new Magnetic(this); });
+//   return cursor;
+// };
 
 function App() {
   const boxes_description = "Corrugated boxes are a type of packaging made from corrugated cardboard, which consists of a fluted inner layer sandwiched between two flat outer layers. These boxes are known for their strength, durability, and versatility. They are widely used for shipping, storage, and as retail packaging for various products. Corrugated boxes offer excellent protection and support, making them ideal for transporting items while minimizing the risk of damage. They come in various sizes and styles to suit different packaging needs and are often customized with printing for branding and product identification. Corrugated boxes are eco-friendly and recyclable, making them a popular choice for sustainable packaging solutions."
@@ -27,7 +22,7 @@ function App() {
   
   useEffect(() => {
     console.log("App loaded");
-   const cursor =initializeCursor();
+  //  const cursor =initializeCursor();
 
   //  const bootstrap = require('bootstrap');
 
@@ -38,7 +33,7 @@ function App() {
   //    ride:'carousel'
   //  });
   
-    return () => {cursor.destroy();};
+    // return () => {cursor.destroy();};
   });
 
   return (
@@ -47,7 +42,7 @@ function App() {
       <LandingPage/>
       {/* <Carousel/> */}
       <div id="products" className='products'>
-        <h1 className='product-heading'  data-cursor="-opaque" data-magnetic >Products</h1>
+        <h1 className='product-heading' >Products</h1>
         <Product number = {1} heading = "Corrogated Boxes" description = {boxes_description} rotate = {false} />
         <Product number = {2} heading = "Corrogated Sheets" description = {sheet_description} rotate = {true} />
         <Product number = {3} heading = "Corrogated Rolls" description = {roll_description} rotate = {false} />
