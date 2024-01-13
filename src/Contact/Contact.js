@@ -3,8 +3,10 @@ import './Contact.css'
 import address from '../assets/store 01.svg' 
 import call from '../assets/call.svg' 
 import mail from '../assets/mail.svg' 
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import {
+  Box,
+  Grid,
     TextField,
   } from '@mui/material';
   import { TextareaAutosize as BaseTextareaAutosize } from '@mui/base/TextareaAutosize';
@@ -79,12 +81,24 @@ export default function Contact(){
         }
       `,
       );
-    
+      const [isXsScreen, setIsXsScreen] = useState(window.innerWidth < 900);
+      useEffect(()=>{
+        const handleResize = () => {
+            setIsXsScreen(window.innerWidth < 900);
+        }
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      },[]);
     return(
         <div id='contact' className="contact">
-            <h1  data-cursor="-opaque" data-magnetic >Contact Us</h1>
-            <div className='cards'>
-                <div className='contact-card'>
+            <h1>Contact Us</h1>
+            <div>
+              {isXsScreen?<Grid container spacing={2} className='cards'>
+                <Grid item xs={12} md={4}>
+                  <div className='contact-card'>
                     <div className='card-logo'>
                         <img src={address}></img>
                     </div>
@@ -92,7 +106,9 @@ export default function Contact(){
                         <h5>ADDRESS</h5>
                         <p>N.M. Patel Estate at & post Raniya,Taluka Savli,Vadodara</p>
                     </div>
-                </div>
+                  </div>
+                </Grid>
+                <Grid item xs={12} md={4}>
                 <div className='contact-card'>
                     <div className='card-logo'>
                         <img src={call}></img>
@@ -101,8 +117,11 @@ export default function Contact(){
                         <h5>CONTACT US</h5>
                         <p>+91 99256 27417 </p>
                     </div>
-                </div>
-                <div className='contact-card'>
+                    </div>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                  <div className='contact-card'>
+                    
                     <div className='card-logo'>
                         <img src={mail}></img>
                     </div>
@@ -110,7 +129,46 @@ export default function Contact(){
                         <h5>EMAIL</h5>
                         <p>dharmikpackaging@gmail.com</p>
                     </div>
+                    </div>
+                </Grid>
+            </Grid>
+              :<Grid container spacing={2} className='cards'>
+              <Grid item xs={12} md={4}>
+                <div className='contact-card'>
+                  <div className='card-logo'>
+                      <img src={address}></img>
+                  </div>
+                  <div className='contact-card-content'>
+                      <h5>ADDRESS</h5>
+                      <p>N.M. Patel Estate at & post Raniya,Taluka Savli,Vadodara</p>
+                  </div>
                 </div>
+              </Grid>
+              <Grid item xs={12} md={4}>
+              <div className='contact-card'>
+                  <div className='card-logo'>
+                      <img src={call}></img>
+                  </div>
+                  <div className='contact-card-content'>
+                      <h5>CONTACT US</h5>
+                      <p>+91 99256 27417 </p>
+                  </div>
+                  </div>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <div className='contact-card'>
+                  
+                  <div className='card-logo'>
+                      <img src={mail}></img>
+                  </div>
+                  <div className='contact-card-content'>
+                      <h5>EMAIL</h5>
+                      <p>dharmikpackaging@gmail.com</p>
+                  </div>
+                  </div>
+              </Grid>
+          </Grid>}
+            
             </div>
            <div className='contact-form'>
             <form className='submit-form'>
