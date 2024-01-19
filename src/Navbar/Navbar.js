@@ -18,7 +18,7 @@ function Navbar() {
           <h1>Dharmik Packaging</h1>
         </div>
         <div className='buttons'>
-          <NavButtons name ={"home"} onClick={scrollFn} />
+          {/* <NavButtons name ={"home"} onClick={scrollFn} /> */}
           <NavButtons name ={"products"} onClick={scrollFn} />
           <NavButtons name ={"about us"} onClick={scrollFn} />
           <NavButtons name ={"contact"} onClick={scrollFn} />

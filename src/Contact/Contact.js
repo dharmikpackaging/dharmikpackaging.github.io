@@ -52,6 +52,7 @@ export default function Contact(){
       const handleSubmit = (e) => {
         e.preventDefault();
       };
+     
       const Textarea = styled(BaseTextareaAutosize)(
         ({ theme }) => `
         height:10px
@@ -96,9 +97,9 @@ export default function Contact(){
         <div id='contact' className="contact">
             <h1>Contact Us</h1>
             <div>
-              {isXsScreen?<Grid container spacing={2} className='cards'>
-                <Grid item xs={12} md={4}>
-                  <div className='contact-card'>
+              <Grid container spacing={2} className='cards'>
+                <Grid item xs={12} md={4} className='flex jc-c ai-c'>
+                  <div className={isXsScreen?'contact-card w-50':'contact-card'}>
                     <div className='card-logo'>
                         <img src={address}></img>
                     </div>
@@ -108,8 +109,8 @@ export default function Contact(){
                     </div>
                   </div>
                 </Grid>
-                <Grid item xs={12} md={4}>
-                <div className='contact-card'>
+                <Grid item xs={12} md={4} className='flex jc-c ai-c'>
+                <div className={isXsScreen?'contact-card w-50':'contact-card'}>
                     <div className='card-logo'>
                         <img src={call}></img>
                     </div>
@@ -119,8 +120,8 @@ export default function Contact(){
                     </div>
                     </div>
                 </Grid>
-                <Grid item xs={12} md={4}>
-                  <div className='contact-card'>
+                <Grid item xs={12} md={4} className='flex jc-c ai-c'>
+                  <div className={isXsScreen?'contact-card w-50':'contact-card'}>
                     
                     <div className='card-logo'>
                         <img src={mail}></img>
@@ -132,42 +133,7 @@ export default function Contact(){
                     </div>
                 </Grid>
             </Grid>
-              :<Grid container spacing={2} className='cards'>
-              <Grid item xs={12} md={4}>
-                <div className='contact-card'>
-                  <div className='card-logo'>
-                      <img src={address}></img>
-                  </div>
-                  <div className='contact-card-content'>
-                      <h5>ADDRESS</h5>
-                      <p>N.M. Patel Estate at & post Raniya,Taluka Savli,Vadodara</p>
-                  </div>
-                </div>
-              </Grid>
-              <Grid item xs={12} md={4}>
-              <div className='contact-card'>
-                  <div className='card-logo'>
-                      <img src={call}></img>
-                  </div>
-                  <div className='contact-card-content'>
-                      <h5>CONTACT US</h5>
-                      <p>+91 99256 27417 </p>
-                  </div>
-                  </div>
-              </Grid>
-              <Grid item xs={12} md={4}>
-                <div className='contact-card'>
-                  
-                  <div className='card-logo'>
-                      <img src={mail}></img>
-                  </div>
-                  <div className='contact-card-content'>
-                      <h5>EMAIL</h5>
-                      <p>dharmikpackaging@gmail.com</p>
-                  </div>
-                  </div>
-              </Grid>
-          </Grid>}
+              
             
             </div>
            <div className='contact-form'>

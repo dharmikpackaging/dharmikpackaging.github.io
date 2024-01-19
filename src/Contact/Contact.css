@@ -6,12 +6,26 @@
     text-align: center;
 }
 .cards{
-    max-height: 25vh;
     margin: 15vh 0 !important;
+    align-items: center;
+    justify-content: center;
+}
+.w-50{
+    width: 50%;
+}
+.flex{
+    display: flex;
+}
+.ai-c{
+    align-items: center;
+}
+.jc-c{
+    justify-content: center;
 }
 
 .contact-card{
     min-height: 30vh;
+    width: 100%;
     border-radius: 1rem;
     text-align: center;
     padding: 2vh 1vw;

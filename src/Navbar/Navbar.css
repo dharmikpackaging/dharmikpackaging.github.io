@@ -17,11 +17,13 @@ nav{
 .brand h1 {
     margin: 0;
     color: var(--navButton); /* Remove margin for the h1 element inside .brand */
+    /* white-space: nowrap; */
   }
   
   .buttons {
     display: flex;
     height: 100%;
+    white-space: nowrap;
   }
   
   
