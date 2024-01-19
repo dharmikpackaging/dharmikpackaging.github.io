@@ -99,7 +99,7 @@ export default function Contact(){
             <div>
               <Grid container spacing={2} className='cards'>
                 <Grid item xs={12} md={4} className='flex jc-c ai-c'>
-                  <div className={isXsScreen?'contact-card w-50':'contact-card'}>
+                  <div className={isXsScreen?'contact-card w-80':'contact-card'}>
                     <div className='card-logo'>
                         <img src={address}></img>
                     </div>
@@ -110,7 +110,7 @@ export default function Contact(){
                   </div>
                 </Grid>
                 <Grid item xs={12} md={4} className='flex jc-c ai-c'>
-                <div className={isXsScreen?'contact-card w-50':'contact-card'}>
+                <div className={isXsScreen?'contact-card w-80':'contact-card'}>
                     <div className='card-logo'>
                         <img src={call}></img>
                     </div>
@@ -121,7 +121,7 @@ export default function Contact(){
                     </div>
                 </Grid>
                 <Grid item xs={12} md={4} className='flex jc-c ai-c'>
-                  <div className={isXsScreen?'contact-card w-50':'contact-card'}>
+                  <div className={isXsScreen?'contact-card w-80':'contact-card'}>
                     
                     <div className='card-logo'>
                         <img src={mail}></img>
