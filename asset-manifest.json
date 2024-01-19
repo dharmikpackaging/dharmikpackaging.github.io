@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dharmik-packaging/static/css/main.6429a188.css",
-    "main.js": "/dharmik-packaging/static/js/main.471bb348.js",
+    "main.css": "/dharmik-packaging/static/css/main.8393d165.css",
+    "main.js": "/dharmik-packaging/static/js/main.2e4b767a.js",
     "static/js/787.137143a8.chunk.js": "/dharmik-packaging/static/js/787.137143a8.chunk.js",
     "static/media/roberto-sorin-7Z1pgI77BoE-unsplash.jpg": "/dharmik-packaging/static/media/roberto-sorin-7Z1pgI77BoE-unsplash.442e3740c1e3cf5569f8.jpg",
     "static/media/brandable-box-yiU8G1K85AM-unsplash.jpg": "/dharmik-packaging/static/media/brandable-box-yiU8G1K85AM-unsplash.737ac0bb30bdb79d4c4f.jpg",
@@ -12,12 +12,12 @@
     "index.html": "/dharmik-packaging/index.html",
     "static/media/call.svg": "/dharmik-packaging/static/media/call.48e6af149ce2b1241fe874d2c8ce3267.svg",
     "static/media/mail.svg": "/dharmik-packaging/static/media/mail.8aa16de422c5927511357caf11b5bb90.svg",
-    "main.6429a188.css.map": "/dharmik-packaging/static/css/main.6429a188.css.map",
-    "main.471bb348.js.map": "/dharmik-packaging/static/js/main.471bb348.js.map",
+    "main.8393d165.css.map": "/dharmik-packaging/static/css/main.8393d165.css.map",
+    "main.2e4b767a.js.map": "/dharmik-packaging/static/js/main.2e4b767a.js.map",
     "787.137143a8.chunk.js.map": "/dharmik-packaging/static/js/787.137143a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6429a188.css",
-    "static/js/main.471bb348.js"
+    "static/css/main.8393d165.css",
+    "static/js/main.2e4b767a.js"
   ]
 }
